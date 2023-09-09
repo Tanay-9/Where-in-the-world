@@ -44,7 +44,8 @@ searchCountryInput.addEventListener('keyup', searchCountryFn);
 function searchCountryFn(){
     [...wrapper.children].forEach(child => {
         child.classList.add('none');
-        if(child.lastElementChild.firstElementChild.innerText.toLowerCase().includes(searchCountryInput.value)){
+        const countrySearch = searchCountryInput.value.trim();
+        if(child.lastElementChild.firstElementChild.innerText.toLowerCase().includes(countrySearch)){
             child.classList.remove('none');
         }
     });
