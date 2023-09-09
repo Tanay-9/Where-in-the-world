@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <header class="head">
+            <div class="first-sub-head">
+                <h2 class="title">Where in the world?</h2>
+                <button class="theme-btn">
+                    <img src= "./design/moon_icomn.svg" alt="dark-mode" class="theme-img">
+                    <span class="theme-txt">dark mode</span>
+                </button>
+            </div>
+            <div class="second-sub-head">
+                <label for="country" class="country-label">
+                    <img src="./design/search_icon.svg" alt="" class="search-icon">
+                    <input type="text" name="country" id="country" placeholder="Search for a country...">
+                </label>
+                <label for="region">
+                    <select name="region" id="region">
+                        <option hidden selected>Filter by Region</option>
+                        <option value="africa">Africa</option>
+                        <option value="americas">America</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </label>
+            </div>
+        </header>
+
+        <div class="wrapper"></div>
+        <div class="none country-details-box"></div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>
