@@ -82,12 +82,12 @@ wrapper.addEventListener('click',(e)=>{
 async function getCountryDetails(i){
     const countryData = await fetch('data.json');
     const countryResults = await countryData.json();
-    console.log(countryResults);
+   
 
     const currenciesList = countryResults[i].currencies?countryResults[i].currencies:0;
     const languagesList = countryResults[i].languages;
     const bordersList = (countryResults[i].borders)? countryResults[i].borders : 0;
-    console.log(bordersList);
+ 
   
 
     const div = document.createElement('div');
